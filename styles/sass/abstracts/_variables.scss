@@ -1,0 +1,25 @@
+// ==================================================
+// Variables
+//
+// 1. Colors
+// 2. Breakpoints
+// ==================================================
+
+
+// 1. Variables
+// ==================================================
+$bg-color: #F3F3EE;
+$black-color: #000;
+$gray-color: #747981;
+$green-primary: #00B285;
+$green-secondary: #00634a;
+$pink-color: #CB356B;
+$red-color: #FF5019;
+$white-color: #FFF;
+
+// 2. Breakpoints
+// ==================================================
+$breakpoints: (
+  "phone-land": 800px,
+  "phone-port": 420px
+);

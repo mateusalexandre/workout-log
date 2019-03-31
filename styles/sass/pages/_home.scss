@@ -1,0 +1,114 @@
+/* Header */
+.cover {
+  background: linear-gradient(330deg,$pink-color 0%,$red-color 100%);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, .2);
+  width: 100%;
+
+  h1 {
+    align-items: center;
+    color: $white-color;
+    display: flex;
+    font-size: 48px;
+    font-weight: 700;
+    justify-content: center;
+    height: 300px;
+
+    @include responsive ('phone-port') {
+      font-size: 32px;
+    }
+  }
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Sections */
+.insert-itens {
+  margin-top: -50px;
+}
+
+.daily-monitoring {
+  margin-top: 50px;
+}
+
+.form-control {
+  background: $white-color;
+  border-radius: 4px;
+  box-shadow: 2px 5px 20px 0px rgba(46, 61, 73, .10);
+  height: auto;
+  padding: 30px 60px;
+  width: 80%;
+
+  @include responsive ('phone-port') {
+    padding: 30px 15px;
+  }
+
+  h2 {
+    color: $black-color;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+
+  @include responsive ('phone-land') {
+    flex-direction: column;
+  }
+}
+
+.input-control {
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: 120px;
+  padding-top: 30px;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  label {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+.table-list {
+  background: $white-color;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 50px;
+
+  a {
+    color: $white-color;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  table thead tr {
+    background: $green-primary;
+    color: $white-color;
+
+    th {
+      font-weight: bold;
+    }
+  }
+}
+
+.table-list-data {
+  background: $white-color;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+
+.send-form {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,55 @@
+// 1. Reset
+// ==================================================
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: $bg-color;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  th,
+  td {
+    padding: .25em;
+    text-align: center;
+  }
+
+  tr:nth-child(odd) {
+    background: $bg-color;
+  }
+}
+
+input,
+select {
+  background: $white-color;
+  border-radius: 5px;
+  border: 1px solid $gray-color;
+  color: $gray-color;
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+
+  &:focus {
+    border: 2px solid $green-primary;
+    box-shadow: 0 0 5px $green-primary;
+    outline: none;
+  }
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T93TMQrCUAzG8V9x8QziiYSuXdzFC7h4AcELOPQAdXYovZCHEATlgQV5GFTe1ozJlz/kS1IpjKqw3wQBVyy++JI0y1GTe7DCBbMAckeNIQKk/BanALBB+16LtnDELoMcsM/BESDlz2heDR3WePwKSLo5eoxz3z6NNcFD+vu3ij14Aqz/DxGbKB7CAAAAAElFTkSuQmCC');
+  background-position: 95%;
+  background-repeat: no-repeat;
+}

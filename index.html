@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Workout Log - Interface developed for Vue.js workshop</title>
-  
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-  <link href="./style/custom.css" rel="stylesheet">
+  <title>Workout Log - App that logs the hours from my physical activities.</title>
+
+  <link href="./styles/css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="cover">
@@ -21,12 +20,12 @@
       <div class="form-group">
         <div class="input-control">
           <label>Duration of exercise (1h)</label>
-          
+
           <input type="number" value="1">
         </div>
         <div class="input-control">
           <label>Type of exercise</label>
-  
+
           <select>
             <option value="Run">Run</option>
             <option value="Swimming">Swimming</option>
@@ -38,7 +37,7 @@
           <input type="date">
         </div>
       </div>
-      
+
       <div class="send-form">
           <button title="Add new item" class="btn btn-main">
             Add Item
@@ -58,13 +57,21 @@
             <th>Date</th>
             <th></th>
           </tr>
-        </thead> 
-        
+        </thead>
+
         <tbody>
           <tr>
-            <td>1</td> 
-            <td>Run</td> 
-            <td>2019-03-29</td> 
+            <td>1</td>
+            <td>Run</td>
+            <td>2019-03-29</td>
+            <td>
+              <button title="Do you want to delete?" class="btn btn-delete">x</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Swimming</td>
+            <td>2019-03-30</td>
             <td>
               <button title="Do you want to delete?" class="btn btn-delete">x</button>
             </td>

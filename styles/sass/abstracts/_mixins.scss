@@ -1,0 +1,24 @@
+// ==================================================
+// Mixins
+//
+// 1. Breakpoints
+// 2. Shadow
+// ==================================================
+
+// 1. Breakpoints
+// ==================================================
+@mixin responsive($width, $type: max) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+
+    @media (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// 2. Shadow
+// ==================================================
+@mixin shadow-dark {
+  box-shadow: 5px 5px 5px 0 transparentize($black-color, .88);
+}
